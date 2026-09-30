@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Menu | Kaybun Dimsum Cimahi</title>
+		<meta name="description" content="Kaybun Dimsum Cimahi: dimsum halal dan dimsum mentai di Bumi Arena, Cimahi.">
+		<link rel="icon" href="images/logo.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body data-page="menu">
+		<main>
+			<section class="ptitle"><div class="wrap"><h1>Pilihan menu</h1><p>Ketuk menu untuk melihat detail, atur jumlah, lalu pesan lewat WhatsApp.</p></div></section>
+			<section class="sec">
+				<div class="wrap">
+					<div class="tools">
+						<button class="chip on" data-c="semua">Semua</button>
+						<button class="chip" data-c="kukus">Kukus</button>
+						<button class="chip" data-c="goreng">Goreng</button>
+						<button class="chip" data-c="mentai">Mentai</button>
+						<input class="search" id="q" type="search" placeholder="Cari menu, misalnya siomay" aria-label="Cari menu">
+					</div>
+					<div class="grid" id="grid"></div>
+				</div>
+			</section>
+			<div class="modal" id="modal" role="dialog" aria-modal="true">
+				<div class="box">
+					<button class="x" aria-label="Tutup">×</button>
+					<img src="" alt="">
+					<div class="txt">
+						<h3></h3>
+						<p class="d"></p>
+						<b class="price p"></b>
+						<div class="qty">
+							<button class="min" aria-label="Kurangi">−</button>
+							<span class="q">1</span>
+							<button class="plus" aria-label="Tambah">+</button>
+						</div>
+						<p>Total: <b class="tot"></b></p>
+						<button class="btn red add-to-cart" type="button">Tambah ke keranjang</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal cart-modal" id="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+				<section class="cart-box">
+					<button class="x cart-close" type="button" aria-label="Tutup keranjang">×</button>
+					<h2 id="cart-title">Keranjang</h2>
+					<div class="cart-items" id="cart-items"></div>
+					<div class="cart-summary">
+						<p>Total <b id="cart-total">Rp0</b></p>
+						<a class="btn red cart-checkout" id="cart-checkout" href="https://web.whatsapp.com/send?phone=6281385852544&amp;text=Halo%20Kaybun%20Dimsum%2C%20saya%20ingin%20memesan.">Pesan via WhatsApp</a>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="js/main.js"></script>
+	</body>
+</html>
